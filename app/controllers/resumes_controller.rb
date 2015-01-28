@@ -29,6 +29,7 @@ class ResumesController < ApplicationController
   # POST /resumes.json
   def create
     @resume = Resume.new(resume_params)
+    @resume.user = current_user
 
     respond_to do |format|
       if @resume.save
