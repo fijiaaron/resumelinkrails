@@ -29,6 +29,7 @@ class ResumelinksController < ApplicationController
   # POST /resumelinks.json
   def create
     @resumelink = Resumelink.new(resumelink_params)
+    @resumelink.user = current_user
 
     respond_to do |format|
       if @resumelink.save
