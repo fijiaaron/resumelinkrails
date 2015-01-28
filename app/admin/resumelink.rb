@@ -1,4 +1,5 @@
 ActiveAdmin.register Resumelink do
+  permit_params :resumelink, :default_resume_format, :show_profile, :show_resume, :download_automatically
 
 
   # See permitted parameters documentation:
