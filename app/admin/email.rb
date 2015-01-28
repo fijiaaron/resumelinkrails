@@ -1,4 +1,5 @@
 ActiveAdmin.register Email do
+  permit_params :email_address
 
 
   # See permitted parameters documentation:
