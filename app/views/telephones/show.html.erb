@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @telephone.number %>
+</p>
+
+<p>
+  <strong>Non us number:</strong>
+  <%= @telephone.non_us_number %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @telephone.profile %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @telephone.type %>
+</p>
+
+<p>
+  <strong>Do not call:</strong>
+  <%= @telephone.do_not_call %>
+</p>
+
+<p>
+  <strong>Do not display:</strong>
+  <%= @telephone.do_not_display %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @telephone.contact %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @telephone.user %>
+</p>
+
+<%= link_to 'Edit', edit_telephone_path(@telephone) %> |
+<%= link_to 'Back', telephones_path %>
