@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @address.street %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @address.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @address.country %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @address.zip %>
+</p>
+
+<p>
+  <strong>Non us state province region:</strong>
+  <%= @address.non_us_state_province_region %>
+</p>
+
+<p>
+  <strong>Non us postal code:</strong>
+  <%= @address.non_us_postal_code %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @address.profile %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @address.contact %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @address.type %>
+</p>
+
+<p>
+  <strong>Do not locate:</strong>
+  <%= @address.do_not_locate %>
+</p>
+
+<p>
+  <strong>Do not display:</strong>
+  <%= @address.do_not_display %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @address.user %>
+</p>
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>
