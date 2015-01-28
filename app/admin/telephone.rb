@@ -1,4 +1,5 @@
 ActiveAdmin.register Telephone do
+  permit_params :number, :non_us_number, :type, :do_not_call, :do_not_display
 
 
   # See permitted parameters documentation:
