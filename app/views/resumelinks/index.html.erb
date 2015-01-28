@@ -1,0 +1,37 @@
+<h1>Listing resumelinks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Resumelink</th>
+      <th>Default resume format</th>
+      <th>Show profile</th>
+      <th>Show resume</th>
+      <th>Download automatically</th>
+      <th>User</th>
+      <th>Profile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @resumelinks.each do |resumelink| %>
+      <tr>
+        <td><%= resumelink.resumelink %></td>
+        <td><%= resumelink.default_resume_format %></td>
+        <td><%= resumelink.show_profile %></td>
+        <td><%= resumelink.show_resume %></td>
+        <td><%= resumelink.download_automatically %></td>
+        <td><%= resumelink.user %></td>
+        <td><%= resumelink.profile %></td>
+        <td><%= link_to 'Show', resumelink %></td>
+        <td><%= link_to 'Edit', edit_resumelink_path(resumelink) %></td>
+        <td><%= link_to 'Destroy', resumelink, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Resumelink', new_resumelink_path %>

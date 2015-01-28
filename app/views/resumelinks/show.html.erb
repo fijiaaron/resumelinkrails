@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Resumelink:</strong>
+  <%= @resumelink.resumelink %>
+</p>
+
+<p>
+  <strong>Default resume format:</strong>
+  <%= @resumelink.default_resume_format %>
+</p>
+
+<p>
+  <strong>Show profile:</strong>
+  <%= @resumelink.show_profile %>
+</p>
+
+<p>
+  <strong>Show resume:</strong>
+  <%= @resumelink.show_resume %>
+</p>
+
+<p>
+  <strong>Download automatically:</strong>
+  <%= @resumelink.download_automatically %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @resumelink.user %>
+</p>
+
+<p>
+  <strong>Profile:</strong>
+  <%= @resumelink.profile %>
+</p>
+
+<%= link_to 'Edit', edit_resumelink_path(@resumelink) %> |
+<%= link_to 'Back', resumelinks_path %>

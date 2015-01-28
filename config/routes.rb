@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :resumelinks
+
   resources :profiles
 
   resources :addresses
