@@ -1,4 +1,5 @@
 ActiveAdmin.register Resume do
+  permit_params :filename, :format, :generated_by, :is_approved, :is_flagged, :is_current, :version, :is_deleted
 
 
   # See permitted parameters documentation:
