@@ -29,6 +29,7 @@ class EmailsController < ApplicationController
   # POST /emails.json
   def create
     @email = Email.new(email_params)
+    @email.user = current_user
 
     respond_to do |format|
       if @email.save
