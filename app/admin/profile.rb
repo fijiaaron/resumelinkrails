@@ -1,4 +1,5 @@
 ActiveAdmin.register Profile do
+  permit_params :profession, :description
 
 
   # See permitted parameters documentation:
