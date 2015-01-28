@@ -1,4 +1,5 @@
 ActiveAdmin.register Registration do
+  permit_params :name, :email, :resumelink, :filename, :tmp_upload, :status, :ip_address
 
 
   # See permitted parameters documentation:
