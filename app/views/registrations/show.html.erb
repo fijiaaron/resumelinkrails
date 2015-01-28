@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @registration.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @registration.email %>
+</p>
+
+<p>
+  <strong>Resumelink:</strong>
+  <%= @registration.resumelink %>
+</p>
+
+<p>
+  <strong>Filename:</strong>
+  <%= @registration.filename %>
+</p>
+
+<p>
+  <strong>Tmp upload:</strong>
+  <%= @registration.tmp_upload %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @registration.status %>
+</p>
+
+<p>
+  <strong>Ip address:</strong>
+  <%= @registration.ip_address %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>
