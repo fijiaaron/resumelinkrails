@@ -3,4 +3,5 @@ class Profile < ActiveRecord::Base
   has_one :resumelink
   has_many :resumes
   has_many :addresses
+  has_many :emails
 end
